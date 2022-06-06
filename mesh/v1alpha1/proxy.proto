@@ -307,9 +307,17 @@ message PrivateKeyProvider {
     google.protobuf.Duration poll_delay = 1;
   }
 
+  // QAT PrivateKeyProvider configuration
+  message QAT {
+    google.protobuf.Duration poll_delay = 1;
+  }
+
   // REQUIRED. Specifies detailed configuration for the Private key provider.
   oneof provider {
+    // Use CryptoMb private key provider
     CryptoMb cryptomb = 2;
+    // Use QAT private key provider
+    QAT qat = 3;
   }
 }
 
