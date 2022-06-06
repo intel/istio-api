@@ -1390,6 +1390,16 @@
                       "$ref": "#/components/schemas/istio.mesh.v1alpha1.PrivateKeyProvider.CryptoMb"
                     }
                   }
+                },
+                {
+                  "required": [
+                    "qat"
+                  ],
+                  "properties": {
+                    "qat": {
+                      "$ref": "#/components/schemas/istio.mesh.v1alpha1.PrivateKeyProvider.QAT"
+                    }
+                  }
                 }
               ]
             }
@@ -1403,6 +1413,16 @@
                 "$ref": "#/components/schemas/istio.mesh.v1alpha1.PrivateKeyProvider.CryptoMb"
               }
             }
+          },
+          {
+            "required": [
+              "qat"
+            ],
+            "properties": {
+              "qat": {
+                "$ref": "#/components/schemas/istio.mesh.v1alpha1.PrivateKeyProvider.QAT"
+              }
+            }
           }
         ]
       },
@@ -1412,6 +1432,15 @@
         "properties": {
           "pollDelay": {
             "description": "How long to wait until the per-thread processing queue should be processed. If the processing queue gets full (eight sign or decrypt requests are received) it is processed immediately. However, if the queue is not filled before the delay has expired, the requests already in the queue are processed, even if the queue is not full. In effect, this value controls the balance between latency and throughput. The duration needs to be set to a non-zero value.",
+            "type": "string"
+          }
+        }
+      },
+      "istio.mesh.v1alpha1.PrivateKeyProvider.QAT": {
+        "description": "QAT PrivateKeyProvider configuration",
+        "type": "object",
+        "properties": {
+          "pollDelay": {
             "type": "string"
           }
         }
