@@ -38981,6 +38981,11 @@
                     "id": 1,
                     "name": "poll_delay",
                     "type": "google.protobuf.Duration"
+                  },
+                  {
+                    "id": 2,
+                    "name": "fallback",
+                    "type": "bool"
                   }
                 ]
               },
@@ -38991,6 +38996,11 @@
                     "id": 1,
                     "name": "poll_delay",
                     "type": "google.protobuf.Duration"
+                  },
+                  {
+                    "id": 2,
+                    "name": "fallback",
+                    "type": "bool"
                   }
                 ]
               }
