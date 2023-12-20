@@ -3387,6 +3387,18 @@ The duration needs to be set to a value greater than or equal to 1 millisecond.<
 No
 </td>
 </tr>
+<tr id="PrivateKeyProvider-CryptoMb-fallback">
+<td><code>fallback</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Boolean flag for enabling/disabling ability to fallback to default SSL implementation if private key
+provider is not available.</p>
+
+</td>
+<td>
+No
+</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -3412,6 +3424,18 @@ No
 Having a small value leads to quicker answers from the hardware but causes more polling loop spins,
 leading to potentially larger CPU usage.
 The duration needs to be set to a value greater than or equal to 1 millisecond.</p>
+
+</td>
+<td>
+No
+</td>
+</tr>
+<tr id="PrivateKeyProvider-QAT-fallback">
+<td><code>fallback</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Boolean flag for enabling/disabling ability to fallback to default SSL implementation if private key
+provider is not available.</p>
 
 </td>
 <td>
