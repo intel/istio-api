@@ -38985,7 +38985,7 @@
                   {
                     "id": 2,
                     "name": "fallback",
-                    "type": "google.protobuf.BoolValue"
+                    "type": "bool"
                   }
                 ]
               },
@@ -39000,7 +39000,7 @@
                   {
                     "id": 2,
                     "name": "fallback",
-                    "type": "google.protobuf.BoolValue"
+                    "type": "bool"
                   }
                 ]
               }
